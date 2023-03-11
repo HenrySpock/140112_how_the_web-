@@ -1,0 +1,56 @@
+Part One
+1. 
+HTTP: HTTP stands for HyperText Transfer Protocol. It's the protocol used for communication between a web server and a client 
+(like a web browser). It's used to transmit data over the internet in the form of web pages, images, videos, and other content.
+
+2. 
+URL: URL stands for Uniform Resource Locator. It's the address of a resource on the internet, like a web page or an image. It's 
+used to locate and access resources on the web.
+
+3.
+DNS: DNS stands for Domain Name System. It's a system that translates domain names (like google.com) into IP addresses 
+(like 172.217.6.174). It's what allows you to type a human-readable domain name into your web browser instead of a string of numbers.
+
+4.
+Query string: A query string is a part of a URL that contains additional data that's passed to a web server. It usually follows 
+a "?" and contains key-value pairs that are separated by "&". For example, in the URL "https://www.google.com/search?q=chatgpt", 
+the query string is "q=chatgpt".
+
+5.
+HTTP verbs: HTTP verbs are used to indicate the type of action being performed on a resource. Two common HTTP verbs are GET and 
+POST. GET is used to retrieve information from a server, while POST is used to submit data to a server for processing.
+
+6.
+HTTP request: An HTTP request is a message sent by a client (like a web browser) to a server. It contains information about the 
+resource being requested and the type of action being performed on that resource (using an HTTP verb like GET or POST).
+
+7.
+HTTP response: An HTTP response is a message sent by a server in response to an HTTP request. It contains the requested resource 
+(like a web page or an image) along with other information like status codes and headers.
+
+8.
+HTTP header: An HTTP header is additional information sent along with an HTTP request or response. It contains metadata about the 
+request or response, like the content type, the length of the content, and caching information. Some examples of HTTP headers 
+include "Content-Type", "Cache-Control", and "User-Agent".
+
+9.
+Processes when typing a URL into a browser: When you type a URL into your web browser, several processes happen behind the scenes. 
+First, the browser uses DNS to translate the domain name into an IP address. Then, the browser sends an HTTP request to the server 
+at that IP address, asking for the resource specified in the URL. The server responds with an HTTP response containing the 
+requested resource, along with other information like headers and status codes. Finally, the browser renders the resource in the 
+browser window, displaying it for the user to see.
+
+Part TWO:
+1. curl -H "Accept: application/json" "https://icanhazdadjoke.com/search?term=pirate"
+2. dig icanhazdadjoke.com
+3.  In terminal, navigate to root directory. 
+    Run command:  python3 -m http.server
+    Open a browser to http://localhost:8000/servertest.html
+
+Part THREE:
+1. Build a very simple HTML form that users the GET method (it can use the same page URL for the action) when the form is submitted.
+2. Add a couple fields and see how the query string changes.
+3. Change the method from "GET" to "POST" and look at the request and response headers in the console.
+
+Part FOUR:
+explore https://developer.mozilla.org/en-US/docs/Web/API/URL

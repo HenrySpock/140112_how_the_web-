@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simple Form</title>
+</head>
+<body>
+	<h2>Simple Form</h2>
+	<form method="POST" action="#">
+    <!-- When you switch from "GET" to "POST", you get a 405 response code, but this doesn't prevent seeing the response
+    and request headers: open the console, click on Network, click on the file on the lefthand side, and you will
+    see them under "Headers" in the right hand panel. -->
+		<label for="name">Name:</label>
+		<input type="text" name="name" id="name"><br><br>
+		<label for="email">Email:</label>
+		<input type="email" name="email" id="email"><br><br>
+		<label for="age">Age:</label>
+		<input type="number" name="age" id="age"><br><br>
+		<label for="message">Message:</label>
+		<textarea name="message" id="message"></textarea><br><br>
+		<label for="country">Country:</label>
+		<select name="country" id="country">
+			<option value="USA">USA</option>
+			<option value="Canada">Canada</option>
+			<option value="Mexico">Mexico</option>
+		</select><br><br>
+		<label for="gender">Gender:</label>
+		<input type="radio" name="gender" id="male" value="male">
+		<label for="male">Male</label>
+		<input type="radio" name="gender" id="female" value="female">
+		<label for="female">Female</label>
+		<input type="radio" name="gender" id="other" value="other">
+		<label for="other">Other</label><br><br>
+		<input type="submit" value="Submit">
+	</form>
+</body>
+</html>
